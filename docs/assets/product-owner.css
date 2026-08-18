@@ -1,0 +1,31 @@
+/*
+ * Estilo para identificação visual do agente Product Owner
+ * Cor de fundo: #E3F2FD (Azul claro)
+ * Cor primária: #1976D2 (Azul médio)
+ * Cor secundária: #0D47A1 (Azul escuro)
+ */
+
+.product-owner-agent {
+  background-color: #E3F2FD;
+  border-left: 4px solid #1976D2;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.product-owner-agent h1,
+.product-owner-agent h2,
+.product-owner-agent h3 {
+  color: #0D47A1;
+}
+
+.product-owner-badge {
+  display: inline-block;
+  background-color: #1976D2;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 8px;
+}

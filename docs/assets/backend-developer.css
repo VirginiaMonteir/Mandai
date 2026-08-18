@@ -1,0 +1,31 @@
+/*
+ * Estilo para identificação visual do agente Backend Developer
+ * Cor de fundo: #E8F5E9 (Verde claro)
+ * Cor primária: #4CAF50 (Verde médio)
+ * Cor secundária: #2E7D32 (Verde escuro)
+ */
+
+.backend-agent {
+  background-color: #E8F5E9;
+  border-left: 4px solid #4CAF50;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.backend-agent h1,
+.backend-agent h2,
+.backend-agent h3 {
+  color: #2E7D32;
+}
+
+.backend-badge {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 8px;
+}
