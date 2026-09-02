@@ -125,6 +125,33 @@
   border-radius: 8px;
 }
 
+.itemImage {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.menuItemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  color: #999;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
 .itemInfo {
   flex: 1;
 }
@@ -249,6 +276,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+  
+  .itemImage {
+    width: 100%;
+    height: 150px;
+    margin-right: 0;
   }
   
   .addButton {

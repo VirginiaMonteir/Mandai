@@ -129,6 +129,17 @@ export default function RestaurantDetail({ params }: { params: { id: string } })
         <div className={styles.menuItems}>
           {filteredMenu().map(item => (
             <div key={item.id} className={styles.menuItem}>
+              <div className={styles.itemImage}>
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className={styles.menuItemImage}
+                  />
+                ) : (
+                  <div className={styles.imagePlaceholder}>Imagem do item</div>
+                )}
+              </div>
               <div className={styles.itemInfo}>
                 <h3 className={styles.itemName}>{item.name}</h3>
                 <p className={styles.itemDescription}>{item.description}</p>

@@ -22,7 +22,15 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.image}>
-        <div className={styles.placeholder}>Imagem do Restaurante</div>
+        {restaurant.image ? (
+          <img
+            src={restaurant.image}
+            alt={restaurant.name}
+            className={styles.restaurantImage}
+          />
+        ) : (
+          <div className={styles.placeholder}>Imagem do Restaurante</div>
+        )}
       </div>
       
       <div className={styles.content}>
